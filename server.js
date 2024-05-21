@@ -28,11 +28,28 @@ const inspirational = [
 
 // Create an HTTP server and listen on the specified port and host
 http.createServer((req, res) => {
-    // Set the HTTP response header with content type as text/html
-    res.writeHead(200, { "Content-Type": "text/html" });
 
-    // End the response with a random inspirational quote
-    res.end(`<h1>${getRandomElement(inspirational)}</h1>`);
+    if (req.url === '/favicon.ico') {
+
+        // Set the HTTP response header with 404 error
+        res.writeHead(404);
+
+        res.end();
+
+        return;
+    }
+
+    if (req.url === '/') {
+
+        // Set the HTTP response header with content type as text/html
+        res.writeHead(200, { "Content-Type": "text/html" });
+
+        // End the response with a random inspirational quote
+        res.end(`<h1 style="text-align:center;">${hello}</h1><h1 style="text-align:center; color:red;">${getRandomElement(inspirational)}</h1>`);
+
+        return;
+
+    }
 
     // Start listening on the specified port and host
 }).listen(port, host, () => {
