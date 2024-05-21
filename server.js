@@ -2,7 +2,7 @@ require('dotenv').config();
 const http = require("http");
 const port = process.env.PORT || 8080;
 const host = process.env.HOST || "localhost";
-const hello = process.env.HELLO || "Hello world not found!";
+const hello = process.env.HELLO || "Hello World!";
 function getRandomElement(arr) {
     const randomIndex = Math.floor(Math.random() * arr.length);
     return arr[randomIndex];
