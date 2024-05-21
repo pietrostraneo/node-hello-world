@@ -1,14 +1,34 @@
-Ciao Ragazzi, repo esercizio di oggi: node-hello-world
+# node-hello-world
 
-**Esercizio**
+## Esercizio
 
-Creiamo la prima applicazione con NodeJs e NPM dove inizializziamo npm tramite npm init ed installiamo le librerie dotenv e nodemon.
-Creiamo un file server.js dove configuriamo il server.
-Tramite il file .env configurare una variabile che poi stamperemo in HTML in risposta alla chiamata al server
-Ricordiamoci di creare il file .gitignore per escludere la cartella node_modules, ma solo per questo esercizio, NON escludiamo il file .env.
+Creiamo la prima applicazione con Node.js e NPM seguendo questi passaggi:
 
-**BONUS:**
+1. **Inizializzazione del progetto**:
+   - Inizializza npm con `npm init`.
 
-Creiamo un array di frasi ispirazionali e creiamo una funzione che ritornerà ogni volta una frase random dall’array.
-Il server dovrà rispondere invocando la funzione e stampando la frase random dentro un tag H1.
+2. **Installazione delle librerie**:
+   - Installa `dotenv` e `nodemon`.
+
+3. **Configurazione del server**:
+   - Crea un file `server.js` e configura il server.
+   - Configura una variabile nel file `.env` e stampala in HTML in risposta alla chiamata al server.
+
+4. **Configurazione del file .gitignore**:
+   - Escludi la cartella `node_modules`, ma NON escludere il file `.env` per questo esercizio.
+
+## BONUS
+
+- Crea un array di frasi ispirazionali.
+- Implementa una funzione che ritorna una frase casuale dall’array.
+- Il server dovrà rispondere con la frase casuale all'interno di un tag `<h1>`.
+
+## Avvio del server
+
+- Usa `nodemon` per avviare il server in modalità sviluppo.
+
 Buon lavoro!
+
+---
+
+Exercise delivered and bonus completed!!
